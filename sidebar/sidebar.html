@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090d">
+  <title>Muse AI Sidebar</title>
+  <link rel="icon" href="../site/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="light-streak streak-one" aria-hidden="true"></div>
+  <div class="light-streak streak-two" aria-hidden="true"></div>
+  <div class="grid-glow" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="https://muse.ai" target="_blank" rel="noopener noreferrer" aria-label="Open Muse AI in a new tab">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>Muse<span class="brand-accent">AI</span></span>
+      </a>
+      <button class="icon-button" id="refreshButton" type="button" aria-label="Retry Muse AI connection" title="Retry connection">↻</button>
+    </header>
+
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow"><span class="status-dot"></span> SIDE PANEL READY</p>
+      <h1 id="title">Make room<br><em>for ideas.</em></h1>
+      <p class="intro">A calm, focused space for your next thought—right beside the page you’re on.</p>
+      <button class="primary-button" id="openMuseButton" type="button">
+        <span>Open Muse AI</span><span class="arrow" aria-hidden="true">↗</span>
+      </button>
+    </section>
+
+    <section class="signal-card" aria-label="Connection status">
+      <div class="signal-ring"><div class="signal-core"></div></div>
+      <div>
+        <p class="card-label">READY WHEN YOU ARE</p>
+        <p class="card-copy" id="statusText">Muse AI opens in a focused tab.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>No data collected</span>
+      <span class="footer-divider">•</span>
+      <a href="https://muse.ai" target="_blank" rel="noopener noreferrer">muse.ai <span aria-hidden="true">↗</span></a>
+    </footer>
+  </main>
+  <script src="sidebar.js"></script>
+</body>
+</html>

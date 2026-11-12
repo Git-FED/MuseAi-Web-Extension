@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discord Servers — Muse AI Sidebar</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../site.css">
+  <style>
+    .discord-page { max-width: 760px; text-align: center; }
+    .discord-page .back { display: block; text-align: left; }
+    .discord-title { margin-bottom: 15px; background: linear-gradient(90deg,#5865f2,#b39dff,#eb459e,#5865f2); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: discord-shimmer 6s linear infinite; }
+    .discord-lede { max-width: 560px; margin: 0 auto 30px; color: var(--muted); }
+    .discord-widget { display: flex; justify-content: center; width: 100%; margin: 25px auto 32px; }
+    .discord-widget iframe { display: block; width: 350px; max-width: 100%; height: 500px; border: 0; border-radius: 14px; box-shadow: 0 20px 50px #0008; }
+    .discord-buttons { display: grid; gap: 13px; width: min(100%, 410px); margin: 0 auto; }
+    .discord-btn { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; border-radius: 12px; padding: 13px 18px; font-size: 15px; font-weight: 800; text-decoration: none; border: 1px solid transparent; box-shadow: 0 8px 22px #0005; transition: transform .18s ease, box-shadow .18s ease; }
+    .discord-btn:hover { transform: translateY(-3px); box-shadow: 0 14px 30px #0008; }
+    .discord-btn.github { background: #4e5058; color: #fff; }
+    .discord-btn.muse { background: #fff; color: #5865f2; }
+    .discord-btn.nsfw { background: #ed4245; color: #fff; }
+    .discord-btn .tag { font-size: 10px; padding: 3px 6px; border-radius: 5px; background: #0005; letter-spacing: .05em; }
+    .discord-btn svg { width: 20px; height: 20px; fill: currentColor; }
+    .email-notice { display: none; margin: 18px auto 0; max-width: 410px; padding: 15px; border: 1px solid #ed424566; border-radius: 12px; background: #ed42451a; color: #ffd8d7; }
+    .email-notice.is-visible { display: block; animation: notice-in .24s ease both; }
+    .email-notice a { color: #fff; font-weight: 800; }
+    dialog.age-gate { width: min(92vw, 420px); padding: 26px; border: 1px solid #ffffff1e; border-radius: 18px; background: #171621; color: var(--text); box-shadow: 0 24px 70px #000a; }
+    dialog.age-gate::backdrop { background: #000b; backdrop-filter: blur(7px); }
+    dialog.age-gate h2 { margin: 0 0 10px; }
+    dialog.age-gate p { color: var(--muted); text-align: left; }
+    .verify { display: flex; gap: 10px; align-items: flex-start; text-align: left; margin: 18px 0; color: #ddd9e8; font-size: 14px; }
+    .verify input { width: 18px; height: 18px; accent-color: #ed4245; }
+    .gate-actions { display: flex; gap: 10px; }
+    .gate-actions button { flex: 1; }
+    @keyframes discord-shimmer { to { background-position: -300% 50%; } }
+    @keyframes notice-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .discord-title { animation: none; } .discord-btn { transition: none; } .discord-btn:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="nav"><a class="lockup" href="../index.html"><img src="../assets/mini-mark.svg" alt="Muse AI symbol"><span>Muse<b>AI</b> Sidebar</span></a><nav class="nav-links"><a href="features.html">Features</a><a href="gallery.html">Gallery</a><a href="support.html">Support</a><a href="discord.html">Discord</a><a href="install.html" class="button primary">Install guide ↗</a></nav></header>
+    <div class="loop-strip" aria-label="Looping project message"><div class="loop-track">✦ COMMUNITY SIGNAL &nbsp;&nbsp; ✦ KEEP IT CREATIVE &nbsp;&nbsp; ✦ DARK MODE, BRIGHT IDEAS &nbsp;&nbsp; ✦ COMMUNITY SIGNAL &nbsp;&nbsp; ✦ KEEP IT CREATIVE &nbsp;&nbsp; ✦ DARK MODE, BRIGHT IDEAS &nbsp;&nbsp;</div></div>
+    <main class="page discord-page">
+      <a class="back" href="../index.html">← Back home</a>
+      <div class="eyebrow">COMMUNITY CHANNELS</div>
+      <h1 class="discord-title">Discord Servers</h1>
+      <p class="discord-lede">Choose a server below. The community widget stays centered on the page, and the 18+ route asks you to email first instead of sending you directly to an invite.</p>
+      <div class="discord-widget"><iframe src="https://discord.com/widget?id=1400235929154879490&theme=dark" title="Git-FED Discord community" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+      <div class="discord-buttons">
+        <a class="discord-btn github" href="https://discord.com/invite/Jm4XStx4Pf" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4a19.8 19.8 0 0 0-4.9-1.5.1.1 0 0 0-.1 0c-.2.4-.4.9-.6 1.3a18.3 18.3 0 0 0-5.5 0 12.6 12.6 0 0 0-.6-1.3.1.1 0 0 0-.1 0 19.7 19.7 0 0 0-4.9 1.5.1.1 0 0 0 0 .1C.5 9-.3 13.6.1 18.1a.1.1 0 0 0 0 .1 19.9 19.9 0 0 0 6 3 .1.1 0 0 0 .1 0c.5-.6.9-1.3 1.2-2a.1.1 0 0 0 0-.1 13.1 13.1 0 0 1-1.9-.9.1.1 0 0 1 0-.1l.4-.3a.1.1 0 0 1 .1 0c3.9 1.8 8.2 1.8 12.1 0a.1.1 0 0 1 .1 0l.4.3a.1.1 0 0 1 0 .1 12.3 12.3 0 0 1-1.9.9.1.1 0 0 0 0 .1c.4.7.8 1.4 1.2 2a.1.1 0 0 0 .1 0 19.8 19.8 0 0 0 6-3 .1.1 0 0 0 0-.1c.5-5.2-.8-9.7-3.5-13.7a.1.1 0 0 0-.1 0Z"/></svg>GitHub — Coding</a>
+        <a class="discord-btn muse" href="https://discord.com/invite/dPPdvYys2a" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4a19.8 19.8 0 0 0-4.9-1.5.1.1 0 0 0-.1 0c-.2.4-.4.9-.6 1.3a18.3 18.3 0 0 0-5.5 0 12.6 12.6 0 0 0-.6-1.3.1.1 0 0 0-.1 0 19.7 19.7 0 0 0-4.9 1.5.1.1 0 0 0 0 .1C.5 9-.3 13.6.1 18.1a.1.1 0 0 0 0 .1 19.9 19.9 0 0 0 6 3 .1.1 0 0 0 .1 0c.5-.6.9-1.3 1.2-2a.1.1 0 0 0 0-.1 13.1 13.1 0 0 1-1.9-.9.1.1 0 0 1 0-.1l.4-.3a.1.1 0 0 1 .1 0c3.9 1.8 8.2 1.8 12.1 0a.1.1 0 0 1 .1 0l.4.3a.1.1 0 0 1 0 .1 12.3 12.3 0 0 1-1.9.9.1.1 0 0 0 0 .1c.4.7.8 1.4 1.2 2a.1.1 0 0 0 .1 0 19.8 19.8 0 0 0 6-3 .1.1 0 0 0 0-.1c.5-5.2-.8-9.7-3.5-13.7a.1.1 0 0 0-.1 0Z"/></svg>MuseAI — AI Agents</a>
+        <button class="discord-btn nsfw" id="nsfw-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4a19.8 19.8 0 0 0-4.9-1.5.1.1 0 0 0-.1 0c-.2.4-.4.9-.6 1.3a18.3 18.3 0 0 0-5.5 0 12.6 12.6 0 0 0-.6-1.3.1.1 0 0 0-.1 0 19.7 19.7 0 0 0-4.9 1.5.1.1 0 0 0 0 .1C.5 9-.3 13.6.1 18.1a.1.1 0 0 0 0 .1 19.9 19.9 0 0 0 6 3 .1.1 0 0 0 .1 0c.5-.6.9-1.3 1.2-2a.1.1 0 0 0 0-.1 13.1 13.1 0 0 1-1.9-.9.1.1 0 0 1 0-.1l.4-.3a.1.1 0 0 1 .1 0c3.9 1.8 8.2 1.8 12.1 0a.1.1 0 0 1 .1 0l.4.3a.1.1 0 0 1 0 .1 12.3 12.3 0 0 1-1.9.9.1.1 0 0 0 0 .1c.4.7.8 1.4 1.2 2a.1.1 0 0 0 .1 0 19.8 19.8 0 0 0 6-3 .1.1 0 0 0 0-.1c.5-5.2-.8-9.7-3.5-13.7a.1.1 0 0 0-.1 0Z"/></svg>18+ NSFW <span class="tag">Email required</span></button>
+      </div>
+      <div class="email-notice" id="email-notice">After confirming your age, email <a href="mailto:museai@fedpromptly.com?subject=18%2B%20Discord%20access">museai@fedpromptly.com</a> to request the private 18+ Discord link. This page will not redirect you directly.</div>
+    </main>
+    <footer class="site-footer"><div class="site-footer-inner"><div class="footer-marquee"><div class="footer-marquee-track">✦ FED-OS &nbsp;&nbsp; ✦ EXPLORE THE ECOSYSTEM &nbsp;&nbsp; ✦ SUPPORT BUILDERS &nbsp;&nbsp; ✦ FED-OS &nbsp;&nbsp; ✦ EXPLORE THE ECOSYSTEM &nbsp;&nbsp; ✦ SUPPORT BUILDERS &nbsp;&nbsp;</div></div><div class="footer-grid"><div><div class="footer-brand">FED<b>-OS</b></div><p class="footer-kicker">A playful ecosystem for ideas, tools, and communities.</p></div><div class="footer-group"><h3>Ecosystem</h3><div class="footer-buttons"><a class="footer-button" href="https://www.fedpromptly.org" target="_blank" rel="noopener noreferrer">Explore</a><a class="footer-button" href="https://www.fedpromptly.com/aid" target="_blank" rel="noopener noreferrer">Membership</a><a class="footer-button" href="https://www.jabburr.com/fed-os" target="_blank" rel="noopener noreferrer">Storefront</a><a class="footer-button" href="https://whop.com/fedpromptly/" target="_blank" rel="noopener noreferrer">Whop</a></div></div><div class="footer-group"><h3>Contact</h3><div class="footer-contact"><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a><a href="mailto:business@fedpromptly.com">Business</a><a href="mailto:careers@fedpromptly.com">Careers</a></div></div><div class="footer-group"><h3>Media</h3><div class="footer-buttons"><a class="footer-button" href="https://substack.com/@fedpromptly" target="_blank" rel="noopener noreferrer">Articles</a><a class="footer-button" href="https://fedpromptly.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a><a class="footer-button" href="https://gitfed.substack.com/" target="_blank" rel="noopener noreferrer">GitFed</a><a class="footer-button" href="https://www.deviantart.com/fedpromptly" target="_blank" rel="noopener noreferrer">Artwork</a></div></div><div class="footer-group"><h3>Support</h3><div class="footer-buttons"><a class="footer-button" href="https://www.patreon.com/c/FEDpromptly" target="_blank" rel="noopener noreferrer">Patreon</a><a class="footer-button" href="https://buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Tips</a><a class="footer-button" href="https://discord.gg/Jm4XStx4Pf" target="_blank" rel="noopener noreferrer">Developers</a><a class="footer-button" href="private-communities.html">Private</a></div></div></div><div class="footer-bottom"><span>© 2026 FED-OS · Public links only</span><nav><a href="../index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="discord.html">Discord</a></nav></div></div></footer>
+  </div>
+  <dialog id="age-gate" class="age-gate" aria-labelledby="age-title"><h2 id="age-title">Age verification required</h2><p>The requested Discord server may contain adult 18+ / NSFW content. You must confirm that you are of legal age in your country.</p><label class="verify"><input type="checkbox" id="age-check"><span>I confirm that I am 18 years or older and consent to viewing adult content.</span></label><div class="gate-actions"><button class="button primary" id="age-confirm" type="button" disabled>Continue</button><button class="button ghost" id="age-cancel" type="button">Cancel</button></div></dialog>
+  <script>
+    const dialog=document.getElementById('age-gate'), check=document.getElementById('age-check'), confirmButton=document.getElementById('age-confirm'), notice=document.getElementById('email-notice');
+    document.getElementById('nsfw-button').addEventListener('click',()=>{check.checked=false;confirmButton.disabled=true;dialog.showModal()});
+    check.addEventListener('change',()=>confirmButton.disabled=!check.checked);
+    confirmButton.addEventListener('click',()=>{if(!check.checked)return;dialog.close();notice.classList.add('is-visible');notice.scrollIntoView({behavior:'smooth',block:'center'})});
+    document.getElementById('age-cancel').addEventListener('click',()=>dialog.close());
+  </script>
+</body>
+</html>

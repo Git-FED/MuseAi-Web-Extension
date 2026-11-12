@@ -1,0 +1,3 @@
+Muse AI Sidebar gives Chrome users a calm, focused way to reach Muse AI without leaving the page they are working on. Click the toolbar button to open a polished side panel with a dark animated background, a clear status signal, and a one-click route to https://muse.ai/.
+
+No account, backend, analytics, advertising, or tracking is added by this extension. It collects no data and uses only the Chromium sidePanel permission needed to open the local panel.
