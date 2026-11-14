@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Support Git-FED — Muse AI Sidebar</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../site.css">
+  <style>
+    .support-page { max-width: 1040px; }
+    .support-intro { max-width: 680px; color: var(--muted); font-size: 17px; }
+    .support-tabs { display: flex; flex-wrap: wrap; gap: 9px; margin: 28px 0 22px; }
+    .support-tab { border: 1px solid var(--line); border-radius: 999px; padding: 10px 15px; background: #ffffff08; color: var(--muted); cursor: pointer; font: inherit; font-size: 13px; font-weight: 750; }
+    .support-tab[aria-selected="true"] { border-color: var(--violet); color: #111018; background: var(--violet); }
+    .support-panel { display: none; background: linear-gradient(145deg,#171621,#0d0e15); border: 1px solid var(--line); border-radius: 20px; padding: 26px; animation: support-in .28s ease both; }
+    .support-panel.is-active { display: block; }
+    .support-panel h2 { margin: 0 0 9px; font-size: 26px; letter-spacing: -.04em; }
+    .support-panel > p { max-width: 680px; color: var(--muted); }
+    .provider-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 22px; }
+    .provider-card { border: 1px solid var(--line); border-radius: 15px; background: #0b0c12; padding: 19px; }
+    .provider-card h3 { margin: 0 0 6px; font-size: 17px; }
+    .provider-card p { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+    .provider-card iframe { max-width: 100%; }
+    .discord-slot { display: flex; justify-content: center; text-align: center; margin: 18px auto; }
+    .provider-card img { max-width: 100%; height: auto; }
+    .provider-link { display: inline-flex; align-items: center; justify-content: center; padding: 10px 13px; border-radius: 9px; text-decoration: none; font-size: 13px; font-weight: 800; color: #111018; background: var(--cyan); }
+    .provider-link.yellow { background: var(--yellow); }
+    .provider-link.violet { background: var(--violet); }
+    .sponsor-frame { width: 600px; max-width: 100%; height: 150px; overflow: hidden; border-radius: 12px; background: #fff; }
+    .sponsor-frame iframe { display: block; border: 0; width: 600px; height: 225px; }
+    .age-gate { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 22px; background: #05060bd9; backdrop-filter: blur(16px); }
+    .age-gate[hidden] { display: none; }
+    .age-card { max-width: 475px; border: 1px solid #ffffff1e; border-radius: 22px; padding: 30px; background: #151521; box-shadow: 0 30px 90px #000b; }
+    .age-card .mini-symbol { width: 48px; height: 48px; margin-bottom: 20px; }
+    .age-card h2 { margin: 0 0 10px; font-size: 32px; letter-spacing: -.06em; }
+    .age-card p { color: var(--muted); }
+    .age-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+    .age-error { min-height: 20px; color: #ff9c98; font-size: 13px; }
+    .legal-note { margin-top: 22px; color: #77798a; font-size: 12px; }
+    @keyframes support-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 680px) { .provider-grid { grid-template-columns: 1fr; } .support-panel { padding: 19px; } }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="nav">
+      <a class="lockup" href="../index.html"><img src="../assets/mini-mark.svg" alt="Muse AI symbol"><span>Muse<b>AI</b> Sidebar</span></a>
+      <nav class="nav-links"><a href="features.html">Features</a><a href="gallery.html">Gallery</a><a href="support.html">Support</a><a href="install.html" class="button primary">Install guide ↗</a></nav>
+    </header><div class="loop-strip" aria-label="Looping project message"><div class="loop-track">✦ DARK MODE, BRIGHT IDEAS &nbsp;&nbsp; ✦ NO ORBITALS &nbsp;&nbsp; ✦ COMMUNITY SIGNAL &nbsp;&nbsp; ✦ DARK MODE, BRIGHT IDEAS &nbsp;&nbsp; ✦ NO ORBITALS &nbsp;&nbsp; ✦ COMMUNITY SIGNAL &nbsp;&nbsp;</div></div>
+
+    <main class="page support-page">
+      <a class="back" href="../index.html">← Back home</a>
+      <div class="eyebrow">SUPPORT THE PROJECT</div>
+      <h1>Keep the good<br><em>weirdness going.</em></h1>
+      <p class="support-intro">Choose a support route below. Payment and community providers load only after you confirm the age gate. Each provider handles its own checkout, account, terms, and privacy policy.</p>
+
+      <div class="support-tabs" role="tablist" aria-label="Support options">
+        <button class="support-tab" role="tab" aria-selected="true" aria-controls="subscribe-panel" data-tab="subscribe">Subscribe</button>
+        <button class="support-tab" role="tab" aria-selected="false" aria-controls="sponsor-panel" data-tab="sponsor">Sponsor</button>
+        <button class="support-tab" role="tab" aria-selected="false" aria-controls="donate-panel" data-tab="donate">Donate</button>
+        <button class="support-tab" role="tab" aria-selected="false" aria-controls="crypto-panel" data-tab="crypto">Crypto</button>
+        <button class="support-tab" role="tab" aria-selected="false" aria-controls="community-panel" data-tab="community">Community</button>
+      </div>
+
+      <section class="support-panel is-active" id="subscribe-panel" role="tabpanel">
+        <h2>Subscribe or become a paid supporter</h2>
+        <p>Choose a recurring route. The provider’s own secure checkout will handle payment details.</p>
+        <div class="provider-grid">
+          <article class="provider-card"><h3>PayPal subscription</h3><p>Recurring subscription plan for Git-FED.</p><div id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y"></div></article>
+          <article class="provider-card"><h3>Stripe</h3><p>Use Stripe’s hosted purchase flow.</p><div id="stripe-slot"><a class="provider-link violet" href="https://buy.stripe.com/" target="_blank" rel="noopener noreferrer">Open Stripe checkout ↗</a></div></article>
+          <article class="provider-card"><h3>GitFed newsletter</h3><p>Subscribe to the GitFed publication.</p><form id="substack-form" novalidate><div class="row"><input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required><button class="button primary" type="submit" id="submit-btn">Subscribe</button></div><p class="msg" id="msg" role="status" aria-live="polite"></p></form></article>
+        </div>
+      </section>
+
+      <section class="support-panel" id="sponsor-panel" role="tabpanel">
+        <h2>Sponsor Git-FED</h2><p>Support the project through GitHub Sponsors.</p>
+        <div class="provider-card sponsor-frame"><iframe src="https://github.com/sponsors/Git-FED/card" title="Sponsor Git-FED" width="600" height="225" frameborder="0" scrolling="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><noscript><a href="https://github.com/sponsors/Git-FED">Sponsor Git-FED on GitHub</a></noscript></div>
+      </section>
+
+      <section class="support-panel" id="donate-panel" role="tabpanel">
+        <h2>Send a one-time thank-you</h2><p>Pick the route that works best for you.</p>
+        <div class="provider-grid">
+          <article class="provider-card"><h3>Ko-fi</h3><p>Quick one-time or recurring support.</p><a class="provider-link" href="https://ko-fi.com/fedpromptly" target="_blank" rel="noopener noreferrer">Support on Ko-fi ↗</a><div id="kofi-slot"></div></article>
+          <article class="provider-card"><h3>Buy Me a Coffee</h3><p>Buy a book for the project.</p><a class="provider-link yellow" href="https://www.buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Buy a book ↗</a></article>
+        </div>
+      </section>
+
+      <section class="support-panel" id="crypto-panel" role="tabpanel">
+        <h2>Cryptocurrency payment</h2><p>Open the NOWPayments checkout in a new tab. Confirm the amount and network on the provider page before paying.</p><a class="provider-link" href="https://nowpayments.io/payment/?iid=5997958570&source=button" target="_blank" rel="noreferrer noopener">Open crypto checkout ↗</a>
+      </section>
+
+      <section class="support-panel" id="community-panel" role="tabpanel">
+        <h2>Join the conversation</h2><p>Connect with the project community on Discord.</p><div class="discord-slot" id="discord-slot"></div><a class="provider-link violet" href="discord.html">Open Discord servers page ↗</a>
+      </section>
+
+      <p class="legal-note">Support is optional. This project does not process payments directly. You must review each third-party provider’s terms, pricing, refund rules, privacy policy, and age requirements before completing a transaction.</p>
+    </main>
+
+    <footer class="site-footer"><div class="site-footer-inner"><div class="footer-marquee"><div class="footer-marquee-track">✦ FED-OS &nbsp;&nbsp; ✦ EXPLORE THE ECOSYSTEM &nbsp;&nbsp; ✦ SUPPORT BUILDERS &nbsp;&nbsp; ✦ FED-OS &nbsp;&nbsp; ✦ EXPLORE THE ECOSYSTEM &nbsp;&nbsp; ✦ SUPPORT BUILDERS &nbsp;&nbsp;</div></div><div class="footer-grid"><div><div class="footer-brand">FED<b>-OS</b></div><p class="footer-kicker">A playful ecosystem for ideas, tools, and communities.</p></div><div class="footer-group"><h3>Ecosystem</h3><div class="footer-buttons"><a class="footer-button" href="https://www.fedpromptly.org" target="_blank" rel="noopener noreferrer">Explore</a><a class="footer-button" href="https://www.fedpromptly.com/aid" target="_blank" rel="noopener noreferrer">Membership</a><a class="footer-button" href="https://www.jabburr.com/fed-os" target="_blank" rel="noopener noreferrer">Storefront</a><a class="footer-button" href="https://whop.com/fedpromptly/" target="_blank" rel="noopener noreferrer">Whop</a></div></div><div class="footer-group"><h3>Contact</h3><div class="footer-contact"><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a><a href="mailto:business@fedpromptly.com">Business</a><a href="mailto:careers@fedpromptly.com">Careers</a></div></div><div class="footer-group"><h3>Media</h3><div class="footer-buttons"><a class="footer-button" href="https://substack.com/@fedpromptly" target="_blank" rel="noopener noreferrer">Articles</a><a class="footer-button" href="https://fedpromptly.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a><a class="footer-button" href="https://gitfed.substack.com/" target="_blank" rel="noopener noreferrer">GitFed</a><a class="footer-button" href="https://www.deviantart.com/fedpromptly" target="_blank" rel="noopener noreferrer">Artwork</a></div></div><div class="footer-group"><h3>Support</h3><div class="footer-buttons"><a class="footer-button" href="https://www.patreon.com/c/FEDpromptly" target="_blank" rel="noopener noreferrer">Patreon</a><a class="footer-button" href="https://buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Tips</a><a class="footer-button" href="https://discord.gg/Jm4XStx4Pf" target="_blank" rel="noopener noreferrer">Developers</a><a class="footer-button" href="private-communities.html">Private</a></div></div></div><div class="footer-bottom"><span>© 2026 FED-OS · Public links only</span><nav><a href="../index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="discord.html">Discord</a></nav></div></div></footer>
+  </div>
+
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title">
+    <div class="age-card">
+      <img class="mini-symbol" src="../assets/mini-mark.svg" alt="Muse AI symbol">
+      <h2 id="age-title">Before you continue</h2>
+      <p>This page contains links to paid subscriptions, donations, and payment providers. Please confirm that you are at least 18 years old and understand that each provider controls its own checkout.</p>
+      <p class="age-error" id="age-error" role="alert"></p>
+      <div class="age-actions"><button class="button primary" id="confirm-age" type="button">I’m 18 or older — continue</button><a class="button ghost" href="../index.html">Leave this page</a></div>
+    </div>
+  </div>
+
+  <script>
+    const gate = document.getElementById('age-gate');
+    const confirmAge = document.getElementById('confirm-age');
+    const ageError = document.getElementById('age-error');
+    confirmAge.addEventListener('click', () => { sessionStorage.setItem('support-age-confirmed', 'yes'); gate.hidden = true; loadProviders(); });
+    if (sessionStorage.getItem('support-age-confirmed') === 'yes') { gate.hidden = true; loadProviders(); }
+
+    document.querySelectorAll('.support-tab').forEach(tab => tab.addEventListener('click', () => {
+      document.querySelectorAll('.support-tab').forEach(t => t.setAttribute('aria-selected', String(t === tab)));
+      document.querySelectorAll('.support-panel').forEach(p => p.classList.toggle('is-active', p.id === tab.getAttribute('aria-controls')));
+    }));
+
+    function loadScript(src, onload) { const script = document.createElement('script'); script.src = src; script.onload = onload; script.async = true; document.head.appendChild(script); }
+    function loadProviders() {
+      if (window.providersLoaded) return; window.providersLoaded = true;
+      loadScript('https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&vault=true&intent=subscription', () => {
+        if (!window.paypal) return;
+        paypal.Buttons({ style: { shape: 'rect', color: 'gold', layout: 'vertical', label: 'subscribe' }, createSubscription: (data, actions) => actions.subscription.create({ plan_id: 'P-4FD24238VX4902214NK2XP2Y', quantity: 1 }), onApprove: (data) => alert('Subscription approved: ' + data.subscriptionID) }).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y');
+      });
+      wireNewsletter();
+      const stripe = document.createElement('script'); stripe.src = 'https://js.stripe.com/v3/buy-button.js'; stripe.async = true; document.head.appendChild(stripe);
+      stripe.onload = () => { document.getElementById('stripe-slot').innerHTML = '<stripe-buy-button buy-button-id=\"buy_btn_1UJKaaJaRf233kfWKZ81fcIe\" publishable-key=\"pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8\"></stripe-buy-button>'; };
+      document.getElementById('discord-slot').innerHTML = '<p style=\"color:var(--muted);font-size:13px;\">The centered community widget is available on the dedicated Discord servers page.</p>';
+    }
+    function wireNewsletter() {
+      const form = document.getElementById('substack-form'), input = document.getElementById('email'), button = document.getElementById('submit-btn'), msg = document.getElementById('msg');
+      form.addEventListener('submit', async (e) => { e.preventDefault(); const email = input.value.trim(); if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = 'Please enter a valid email address.'; return; } button.disabled = true; button.textContent = 'Subscribing…'; try { const body = new URLSearchParams({ email, source: 'embed' }); const res = await fetch('https://gitfed.substack.com/api/v1/free?nojs=true', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body }); if (!res.ok) throw new Error('Please use the hosted subscribe page.'); msg.textContent = 'Almost there — check your inbox to confirm.'; form.reset(); } catch (_) { window.open('https://gitfed.substack.com/subscribe?email=' + encodeURIComponent(email), '_blank', 'noopener'); } finally { button.disabled = false; button.textContent = 'Subscribe'; } });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Private Communities — FED-OS</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../site.css">
+  <style>
+    .private-page { max-width: 720px; }
+    .private-card { margin-top: 26px; padding: 26px; border: 1px solid #ed424566; border-radius: 20px; background: linear-gradient(145deg,#21151c,#12121a); }
+    .private-card h2 { margin: 0 0 10px; }
+    .private-card p { color: var(--muted); }
+    .private-form { display: grid; gap: 15px; margin-top: 24px; }
+    .private-form label { display: flex; align-items: flex-start; gap: 10px; color: #e4deec; font-size: 14px; }
+    .private-form input[type="checkbox"] { width: 18px; height: 18px; flex: 0 0 auto; accent-color: #ed4245; }
+    .private-form select { width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: 10px; background: #0b0c12; color: var(--text); font: inherit; }
+    .private-form button { width: 100%; cursor: pointer; }
+    .private-message { min-height: 22px; color: #ffb2ae; font-size: 13px; }
+    .private-message.success { color: var(--cyan); }
+    #matrix-link { display: none; margin-top: 18px; }
+    #matrix-link.is-visible { display: inline-flex; animation: private-reveal .25s ease both; }
+    @keyframes private-reveal { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="nav"><a class="lockup" href="../index.html"><img src="../assets/mini-mark.svg" alt="Muse AI symbol"><span>FED<b>-OS</b> Communities</span></a><nav class="nav-links"><a href="support.html">Support</a><a href="discord.html">Discord</a><a href="../index.html" class="button primary">Back home ↗</a></nav></header>
+    <div class="loop-strip" aria-label="Looping private communities message"><div class="loop-track">✦ PRIVATE COMMUNITY CHECK &nbsp;&nbsp; ✦ 18+ AGE GATE &nbsp;&nbsp; ✦ COUNTRY ELIGIBILITY &nbsp;&nbsp; ✦ PRIVATE COMMUNITY CHECK &nbsp;&nbsp; ✦ 18+ AGE GATE &nbsp;&nbsp; ✦ COUNTRY ELIGIBILITY &nbsp;&nbsp;</div></div>
+    <main class="page private-page">
+      <a class="back" href="../index.html">← Back home</a>
+      <div class="eyebrow">PRIVATE COMMUNITIES</div>
+      <h1>Restricted access,<br><em>carefully handled.</em></h1>
+      <p> The private Matrix room is not listed in the public footer. Access is limited to adults who live in an eligible country and confirm the notice below.</p>
+      <section class="private-card">
+        <h2>Before revealing the room</h2>
+        <p>This private community is 18+ and country-restricted. Eligible countries: Canada, Switzerland, Russia, Iran, Somalia, and Turkmenistan.</p>
+        <form class="private-form" id="private-form">
+          <label><input id="adult-check" type="checkbox" required><span>I confirm that I am 18 years or older and consent to viewing adult community content.</span></label>
+          <label for="country"><span>Country</span></label>
+          <select id="country" required><option value="">Choose your country</option><option>Canada</option><option>Switzerland</option><option>Russia</option><option>Iran</option><option>Somalia</option><option>Turkmenistan</option><option value="ineligible">Another country</option></select>
+          <button class="button primary" type="submit">Check eligibility</button>
+          <div class="private-message" id="private-message" role="status" aria-live="polite"></div>
+        </form>
+        <a id="matrix-link" class="button primary" href="https://matrix.to/#/#fed-os:matrix.org" target="_blank" rel="noopener noreferrer">Open Private Matrix ↗</a>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="site-footer-inner"><div class="footer-marquee"><div class="footer-marquee-track">✦ FED-OS &nbsp;&nbsp; ✦ EXPLORE THE ECOSYSTEM &nbsp;&nbsp; ✦ SUPPORT BUILDERS &nbsp;&nbsp; ✦ FED-OS &nbsp;&nbsp; ✦ EXPLORE THE ECOSYSTEM &nbsp;&nbsp; ✦ SUPPORT BUILDERS &nbsp;&nbsp;</div></div><div class="footer-grid"><div><div class="footer-brand">FED<b>-OS</b></div><p class="footer-kicker">A playful ecosystem for ideas, tools, and communities.</p></div><div class="footer-group"><h3>Ecosystem</h3><div class="footer-buttons"><a class="footer-button" href="https://www.fedpromptly.org" target="_blank" rel="noopener noreferrer">Explore</a><a class="footer-button" href="https://www.fedpromptly.com/aid" target="_blank" rel="noopener noreferrer">Membership</a><a class="footer-button" href="https://www.jabburr.com/fed-os" target="_blank" rel="noopener noreferrer">Storefront</a><a class="footer-button" href="https://whop.com/fedpromptly/" target="_blank" rel="noopener noreferrer">Whop</a></div></div><div class="footer-group"><h3>Contact</h3><div class="footer-contact"><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a><a href="mailto:business@fedpromptly.com">Business</a><a href="mailto:careers@fedpromptly.com">Careers</a></div></div><div class="footer-group"><h3>Media</h3><div class="footer-buttons"><a class="footer-button" href="https://substack.com/@fedpromptly" target="_blank" rel="noopener noreferrer">Articles</a><a class="footer-button" href="https://fedpromptly.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a><a class="footer-button" href="https://gitfed.substack.com/" target="_blank" rel="noopener noreferrer">GitFed</a><a class="footer-button" href="https://www.deviantart.com/fedpromptly" target="_blank" rel="noopener noreferrer">Artwork</a></div></div><div class="footer-group"><h3>Support</h3><div class="footer-buttons"><a class="footer-button" href="https://www.patreon.com/c/FEDpromptly" target="_blank" rel="noopener noreferrer">Patreon</a><a class="footer-button" href="https://buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Tips</a><a class="footer-button" href="https://discord.gg/Jm4XStx4Pf" target="_blank" rel="noopener noreferrer">Developers</a><a class="footer-button" href="private-communities.html">Private</a></div></div></div><div class="footer-bottom"><span>© 2026 FED-OS · Public links only</span><nav><a href="../index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="discord.html">Discord</a></nav></div></div></footer>
+  </div>
+  <script>
+    const form=document.getElementById('private-form'), adult=document.getElementById('adult-check'), country=document.getElementById('country'), message=document.getElementById('private-message'), link=document.getElementById('matrix-link');
+    form.addEventListener('submit',(event)=>{event.preventDefault();link.classList.remove('is-visible');message.className='private-message';if(!adult.checked){message.textContent='Please confirm that you are 18 or older.';return}if(!['Canada','Switzerland','Russia','Iran','Somalia','Turkmenistan'].includes(country.value)){message.textContent='This room is not available in the selected country.';return}message.textContent='Eligibility confirmed. The private room link is now available.';message.classList.add('success');link.classList.add('is-visible')});
+  </script>
+</body>
+</html>
